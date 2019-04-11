@@ -1,3 +1,5 @@
+package SealUtil;
+
 import cn.localhost01.seal.SealUtil;
 import cn.localhost01.seal.configuration.SealCircle;
 import cn.localhost01.seal.configuration.SealConfiguration;
@@ -6,7 +8,7 @@ import cn.localhost01.seal.configuration.SealFont;
 import java.awt.*;
 import java.io.IOException;
 
-public class Main {
+public class App {
 
     public static void main(String[] args) throws Exception {
         /**
