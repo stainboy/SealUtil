@@ -1,13 +1,14 @@
 version: '3'
 services:
   dev:
-    image: gradle:5.3.1-jdk8-alpine
+    build: .
     working_dir: /workspace
     user: root
     command:
     - sh
     - -exc
     - |
-      gradle build --project-cache-dir .gradle
+      gradle run --project-cache-dir .gradle
     volumes:
     - .:/workspace
+    - /usr/share/fonts:/usr/share/fonts:ro

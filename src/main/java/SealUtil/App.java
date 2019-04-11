@@ -21,7 +21,7 @@ public class App {
          */
         SealFont mainFont = new SealFont();
         mainFont.setBold(true);
-        mainFont.setFontFamily("楷体");
+        mainFont.setFontFamily("Droid Sans Fallback");
         mainFont.setMarginSize(10);
         /**************************************************/
         //mainFont.setFontText("欢乐无敌制图网淘宝店专用章");
@@ -41,7 +41,7 @@ public class App {
          */
         SealFont viceFont = new SealFont();
         viceFont.setBold(true);
-        viceFont.setFontFamily("宋体");
+        viceFont.setFontFamily("Droid Sans Fallback");
         viceFont.setMarginSize(5);
         /**************************************************/
         //viceFont.setFontText("123456789012345");
@@ -57,7 +57,7 @@ public class App {
          */
         SealFont centerFont = new SealFont();
         centerFont.setBold(true);
-        centerFont.setFontFamily("宋体");
+        centerFont.setFontFamily("Droid Sans Fallback");
         /**************************************************/
         //centerFont.setFontText("★");
         //centerFont.setFontSize(100);
@@ -76,7 +76,7 @@ public class App {
          */
         SealFont titleFont = new SealFont();
         titleFont.setBold(true);
-        titleFont.setFontFamily("宋体");
+        titleFont.setFontFamily("Droid Sans Fallback");
         titleFont.setFontSize(22);
         /**************************************************/
         //titleFont.setFontText("发货专用");
@@ -130,15 +130,15 @@ public class App {
 
         //1.生成公章
         try {
-            SealUtil.buildAndStoreSeal(configuration, "C:\\Users\\localhost01\\Desktop\\公章.png");
+            SealUtil.buildAndStoreSeal(configuration, "./foo.png");
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         //2.生成私章
-        SealFont font = new SealFont();
-        font.setFontSize(120).setBold(true).setFontText("诸葛孔明");
-        SealUtil.buildAndStorePersonSeal(300, 16, font, "印", "C:\\Users\\localhost01\\Desktop\\私章.png");
+        // SealFont font = new SealFont();
+        // font.setFontSize(120).setBold(true).setFontText("诸葛孔明");
+        // SealUtil.buildAndStorePersonSeal(300, 16, font, "印", "C:\\Users\\localhost01\\Desktop\\私章.png");
     }
 
 }
